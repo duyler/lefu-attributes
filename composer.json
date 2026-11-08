@@ -1,0 +1,43 @@
+{
+    "name": "duyler/lefu-attributes",
+    "description": "Powerful PHP lefu-attributes",
+    "keywords": [
+        "lefu-attributes"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikhail Ilinsky",
+            "email": "mail@milinsky.ru"
+        }
+    ],
+    "require": {
+        "php": "8.4 - 8.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.4",
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "vimeo/psalm": "^7.0",
+        "rector/rector": "^2.8",
+        "infection/infection": "^0.35"
+    },
+    "autoload": {
+        "psr-4": {
+            "Duyler\\LefuAttributes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Duyler\\LefuAttributes\\Test\\": ["tests/"]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
