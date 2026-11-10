@@ -41,6 +41,9 @@ jobs:
       - name: Run tests
         run: php -d pcov.enabled=1 vendor/bin/phpunit --coverage-clover=coverage.xml --colors=always
 
+      - name: Run Infection
+        run: php -d pcov.enabled=1 vendor/bin/infection --show-mutations
+
       - name: Run PHP CS Fixer
         run: vendor/bin/php-cs-fixer check --diff -v
 
