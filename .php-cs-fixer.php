@@ -15,7 +15,7 @@ return (new Config())
     ->setRiskyAllowed(true)
     ->setParallelConfig(ParallelConfigFactory::detect())
     ->setRules([
-        '@PER-CS3.0' => true,
+        '@PER-CS3x0' => true,
         'no_unused_imports' => true,
         'ordered_class_elements' => true,
         'class_attributes_separation' => ['elements' => ['method' => 'one']],

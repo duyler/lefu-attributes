@@ -30,6 +30,10 @@ coverage:
 update:
 	docker-compose run --rm php composer update
 
+.PHONY: autoload
+autoload:
+	docker-compose run --rm php composer dump-autoload
+
 .PHONY: init
 init:
 	@if [ -z "$(NAME)" ]; then \
