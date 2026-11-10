@@ -1,11 +1,11 @@
 {
-    "name": "duyler/lefu-attributes",
-    "description": "Powerful PHP lefu-attributes",
+    "name": "lefu/attributes",
+    "description": "Lefu dialect runtime: type descriptors, attributes, contracts",
+    "type": "library",
+    "license": "MIT",
     "keywords": [
         "lefu-attributes"
     ],
-    "type": "library",
-    "license": "MIT",
     "authors": [
         {
             "name": "Mikhail Ilinsky",
@@ -23,14 +23,7 @@
         "infection/infection": "^0.35"
     },
     "autoload": {
-        "psr-4": {
-            "Duyler\\LefuAttributes\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Duyler\\LefuAttributes\\Test\\": ["tests/"]
-        }
+        "classmap": ["src/"]
     },
     "config": {
         "sort-packages": true,
